@@ -1,0 +1,231 @@
+/* --- Global & Layout --- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f0f4f8;
+  color: #333; /* Default dark text color */
+  line-height: 1.6;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.dashboard-header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px M(8)px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* --- Buttons --- */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #357abd;
+}
+
+.back-button, .logout-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+.back-button:hover, .logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- ASHA Worker Dashboard --- */
+.search-container {
+  margin-bottom: 1.5rem;
+}
+.search-bar {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.infant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.infant-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.infant-card:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+.risk-dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.risk-dot.high { background-color: #dc3545; }
+.risk-dot.moderate { background-color: #ffc107; }
+.risk-dot.normal { background-color: #28a745; }
+.risk-dot.not-assessed { background-color: #6c757d; }
+.risk-dot.error { background-color: #343a40; }
+
+/* --- Infant Detail View --- */
+.infant-meta {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.infant-meta span {
+  margin-left: 1.5rem;
+}
+
+.view-toggle {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 10px;
+}
+.view-toggle button {
+  background-color: #e9ecef;
+  color: #495057;
+}
+.view-toggle button.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.form-container, .records-list, .chart-container, .scheme-card {
+  background-color: #fff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.form-container form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.form-container input, .form-container select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.analysis-result {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  border: 1px solid;
+}
+.analysis-result.high { background-color: #fbe9e7; border-color: #ff8a65; color: #c63f17; }
+.analysis-result.moderate { background-color: #fff3e0; border-color: #ffd54f; color: #ef6c00; }
+.analysis-result.normal { background-color: #e8f5e9; border-color: #a5d6a7; color: #2e7d32; }
+
+.record-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+.record-card:last-child {
+  border-bottom: none;
+}
+
+/* --- Mother's Dashboard --- */
+.infant-reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.infant-reg-form input, .infant-reg-form select {
+  padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; color: #333;
+}
+
+.reminder-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff3cd;
+  color: #664d03;
+  padding: 1rem;
+  border: 1px solid #ffecb5;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.reminder-icon {
+  font-size: 1.5rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Modal for Appointment Scheduler --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background-color: white;
+  color: #333;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+.modal-content .input-group { margin-bottom: 1rem; }
+.modal-content label { display: block; margin-bottom: 0.5rem; }
+.modal-content input, .modal-content select { width: 100%; }
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.modal-actions .cancel-btn {
+  background-color: #6c757d;
+}

@@ -1,0 +1,15 @@
+WHO Child Growth Standards Fact Sheet
+
+Topic: Underweight Assessment
+Definition: An infant is considered underweight if their weight-for-age is below -2 standard deviations (z-scores) from the WHO Child Growth Standards median.
+- Moderate Underweight: Z-score is between -2 and -3. Suggestion: Recommend nutritional counseling and a follow-up visit in two weeks.
+- Severe Underweight: Z-score is below -3. Suggestion: This indicates severe acute malnutrition. Immediate referral to a primary health center or hospital for therapeutic feeding is critical.
+
+Topic: Stunting Assessment
+Definition: An infant is considered stunted if their height-for-age is below -2 standard deviations (z-scores). Stunting reflects chronic malnutrition.
+- Moderate Stunting: Z-score is between -2 and -3. Suggestion: Focus on improving dietary diversity and nutrient intake. Provide guidance on micronutrient supplements.
+- Severe Stunting: Z-score is below -3. Suggestion: Requires comprehensive nutritional support and investigation for underlying health issues. Refer to a pediatrician.
+
+Topic: Normal Growth
+Definition: An infant's growth is normal if weight-for-age and height-for-age z-scores are between -2 and +2.
+Suggestion: Growth is on track. Encourage the mother to continue current feeding practices and regular monitoring.

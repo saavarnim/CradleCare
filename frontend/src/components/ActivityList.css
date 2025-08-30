@@ -1,0 +1,37 @@
+.activity-list-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.activity-list-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.activity-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-list-container li:last-child {
+  border-bottom: none;
+}
+
+.log-type {
+  font-weight: 600;
+}
+
+.log-time {
+  color: #777;
+  font-size: 0.9rem;
+}

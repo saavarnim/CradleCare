@@ -1,0 +1,46 @@
+.log-creator-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.log-creator-container h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.log-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.log-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  flex-grow: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.log-button:hover {
+  border-color: #4a90e2;
+  background-color: #e9f2fa;
+  transform: translateY(-2px);
+}
+
+.log-button .icon {
+  font-size: 2.5rem;
+}
