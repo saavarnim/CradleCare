@@ -3,10 +3,11 @@ from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
 import datetime
 
-SQLALCHEMY_DATABASE_URL = "sqlite:////var/data/cradlecare.db"
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
-)
+INTERNAL_DB_URL = "postgresql://cradlecare_db_user:J2K7tNi5k5pb9rgvqleFkZDjjgG7P6zR@dpg-d2p8a4l6ubrc73c1n4o0-a/cradlecare_db"
+SQLALCHEMY_DATABASE_URL = INTERNAL_DB_URL.replace("postgresql://", "postgresql+asyncpg://")
+
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
